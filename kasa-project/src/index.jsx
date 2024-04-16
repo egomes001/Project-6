@@ -5,6 +5,8 @@ import Home from './pages/Home/';
 import About from './pages/About/';
 import Error from './pages/Error/';
 import Header from './components/Header/';
+import Banner from './components/Banner';
+import Gallery from './components/Gallery';
 import './styles/General.scss';
 import Footer from './components/Footer';
 
@@ -18,6 +20,8 @@ root.render(
         <Route path='/About' element={<About />}></Route>
         <Route path='*' element={<Error />}></Route>
       </Routes>
+      <Banner />
+      <Gallery />
       <Footer />
     </Router>
   </React.StrictMode>

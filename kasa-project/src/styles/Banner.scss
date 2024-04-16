@@ -1,0 +1,29 @@
+$shadow: rgba(0, 0, 0, 0.24) 0px 4px 8px;
+
+.banner{
+    display: flex;
+    margin: 30px 100px;
+    position: relative;
+
+    &__bg{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 20px;
+        filter: brightness(0.5);
+        box-shadow: $shadow;
+    }
+
+    &__imgtext{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        color: white;
+        font-size: 2.2em;
+        font-weight: bold;
+        text-shadow: $shadow,
+                    0 0 2px black;
+    }
+}
