@@ -1,10 +1,14 @@
 import '../../styles/Banner.scss';
-import bg_img from '../../assets/images/bg_1.png';
 
-function Banner() {
+function Banner({bg, pageType}) {
+    const description =
+		pageType === 'Home' ? (
+			<p className='banner__imgtext'>Chez vous, partout et ailleurs</p>
+		) : null;
+
 	return <div className='banner'>
-        <img src= {bg_img} alt="Paysage de falaises" className='banner__bg'></img>
-        <p className='banner__imgtext'>Chez vous, partout et ailleurs</p>
+        <img src= {bg} alt="Paysage montagneux" className='banner__bg'></img>
+        {description}
     </div>
 }
 
