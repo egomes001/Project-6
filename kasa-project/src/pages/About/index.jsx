@@ -6,12 +6,12 @@ import '../../styles/About.scss';
 
 function About() {
     return (
-      <div>
+      <div className='about'>
         <Banner bg={bg_img1}/>
-        <section className='container'>
+        <section className='about__container'>
           {rules.map((content,index) => 
             <div key={index.toString()}>
-              <Collapse title={content.title} text={content.text}/>
+              <Collapse title={content.title} text={content.text} index={content.index}/>
             </div>
           )}
         </section>
