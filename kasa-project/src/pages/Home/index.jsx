@@ -4,10 +4,10 @@ import bg_img1 from '../../assets/images/bg_1.png';
 
 function Home() {
     return (
-      <div>
+      <main>
         <Banner bg={bg_img1} pageType={"Home"}/>
         <Gallery />
-      </div>
+      </main>
     )
   }
   

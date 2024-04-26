@@ -1,0 +1,73 @@
+$main-color : rgba(255, 96, 96, 1);
+$light-font: 500;
+
+@mixin main-margin{
+    margin: 5px 100px;
+}
+
+.homestay{
+    @include main-margin;
+    &__details{
+        margin-top: 25px;
+    }
+    .description{
+        display: flex;
+        justify-content: space-between;
+        &__left{
+            &--h1{
+                color: $main-color;
+                font-size: 2.3em;
+                font-weight: $light-font;
+            }
+            &--h2{
+                font-size: 1.2em;
+                font-weight: $light-font;
+                margin-bottom: 15px;
+                
+            }
+            &--buttons{
+                & > button{
+                    color: white;
+                    background-color: $main-color;
+                    border: none;
+                    border-radius: 12px;
+                    padding: 5px 30px;
+                    &:not(:last-child){
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+        &__right{
+            
+            &--host{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 30px;
+                & > span{
+                    color: $main-color;
+                }
+                & > img{
+                    height: 50px;
+                    border-radius: 100%;
+                    margin-left: 25px;
+                }
+            }
+            &--ratings{
+                & > img{
+                    margin-left: 10px;
+                }
+            }
+        }
+
+    }
+    .collapse{
+        display: flex;
+        justify-content: space-between;
+        &__menu{
+            width: 45%;
+
+        }
+    }
+}

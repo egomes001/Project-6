@@ -4,11 +4,11 @@ import '../../styles/Error.scss';
 
 function Error() {
     return (
-      <div className="error">
+      <main className="error">
         <img src={error404} alt="Erreur 404" className="error__img"/>
         <p className="error__text">Oups! La page demandée n'existe pas.</p>
         <Link to="/Home" className="error__link">Retourner sur la page d'accueil</Link>
-      </div>
+      </main>
     )
   }
   

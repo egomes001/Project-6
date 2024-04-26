@@ -6,7 +6,7 @@ import '../../styles/About.scss';
 
 function About() {
     return (
-      <div className='about'>
+      <main className='about'>
         <Banner bg={bg_img1}/>
         <section className='about__container'>
           {rules.map((content,index) => 
@@ -14,8 +14,8 @@ function About() {
               <Collapse title={content.title} text={content.text} index={content.index}/>
             </div>
           )}
-        </section>
-      </div>
+        </section>   
+      </main>
     )
   }
   
