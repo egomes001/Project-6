@@ -1,7 +1,7 @@
 .slideshow{
     position: relative;
     height: 380px;
-    @media (max-width: 725px) {
+    @media (max-width: 895px) {
         height: 320px;
     }
     &__picture{

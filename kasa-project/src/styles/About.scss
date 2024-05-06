@@ -1,12 +1,19 @@
 .about{
     &__container{
-        margin: 0px 50px 90px 50px;
+        margin: 0px 100px 90px 100px;
         display: flex;
         flex-direction: column;
         align-items: center;
         height: 100%;
+        @media (max-width: 895px) {
+            margin: 0px 30px 90px 30px;
+        }
         & > div{
-            width: 100%;
+            width: 90%;
+            
+            @media (max-width: 895px) {
+                width: 100%;
+            }
         }
     }
 }    

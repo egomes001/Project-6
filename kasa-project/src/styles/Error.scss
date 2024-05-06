@@ -10,10 +10,11 @@
     }
     &__link{
         font-size: 1em;
+        color :black;
         text-decoration: underline black;
     }
     
-    @media (max-width: 725px) {
+    @media (max-width: 895px) {
         & > img {
             height: 100px;
         }

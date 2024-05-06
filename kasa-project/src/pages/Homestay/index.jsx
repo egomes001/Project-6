@@ -1,7 +1,7 @@
 import '../../styles/Homestay.scss';
 import Collapse from '../../components/Collapse';
 import Slideshow from '../../components/Slideshow';
-import { useParams } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 import data from '../../assets/files/logements.json';
 import redStar from '../../assets/images/redStar.png';
 import greyStar from '../../assets/images/greyStar.png';
@@ -11,8 +11,11 @@ function Homestay() {
 
     const homestayId = useParams().homestayId;
     const homestayData = data.filter((logements) => logements.id === homestayId ?? logements)[0];
-
     const ratingScale = [1, 2, 3, 4, 5];
+
+    if(homestayData===undefined) {
+        return <Navigate to="/*"/>
+    }
 
 	return <main className='homestay'>
         <Slideshow pictures={homestayData.pictures}/>

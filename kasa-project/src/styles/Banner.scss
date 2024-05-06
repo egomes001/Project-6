@@ -2,10 +2,10 @@ $shadow: rgba(0, 0, 0, 0.24) 0px 4px 8px;
 
 .banner{
     display: flex;
-    margin: 30px 100px 0px 100px;
+    margin: 30px 100px 20px 100px;
     position: relative;
     
-    @media (max-width: 725px) {
+    @media (max-width: 895px) {
         margin : 30px
     }
     &__bg{
@@ -24,7 +24,7 @@ $shadow: rgba(0, 0, 0, 0.24) 0px 4px 8px;
     &__imgtext{
         position: absolute;
         top: 50%;
-        left: 40%;
+        left: 50%;
         transform: translate(-50%, -50%);
         z-index: 1;
         color: white;
@@ -33,8 +33,9 @@ $shadow: rgba(0, 0, 0, 0.24) 0px 4px 8px;
         text-shadow: $shadow,
                     0 0 2px black;
         
-        @media (max-width: 725px) {
+        @media (max-width: 895px) {
             font-size: 1.5em;
+            left: 40%;
         }
     }
 }
