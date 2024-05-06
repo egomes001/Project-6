@@ -5,6 +5,10 @@
     align-items: center;
     justify-content: center;
     height: 15.5vh;
+    
+    @media (max-width: 725px) {
+        height: 23vh;
+    }
 
     &__logo{
        margin-bottom: 30px;

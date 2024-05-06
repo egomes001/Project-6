@@ -6,9 +6,19 @@
     &__text{
         font-size: 2.8em;
         color: rgba(255, 96, 96, 1);
+        text-align: center;
     }
     &__link{
         font-size: 1em;
         text-decoration: underline black;
+    }
+    
+    @media (max-width: 725px) {
+        & > img {
+            height: 100px;
+        }
+        &__text{
+            font-size: 1.3em;
+        }
     }
 }

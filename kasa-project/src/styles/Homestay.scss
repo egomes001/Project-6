@@ -7,6 +7,12 @@ $light-font: 500;
 
 .homestay{
     @include main-margin;
+    
+    @media (max-width: 725px) {
+        display: flex;
+        flex-direction: column;
+        margin: 5px 30px;
+    }
     &__details{
         margin-top: 25px;
     }
@@ -18,6 +24,9 @@ $light-font: 500;
                 color: $main-color;
                 font-size: 2.3em;
                 font-weight: $light-font;
+                @media (max-width: 725px) {
+                    font-size: 1.7em;
+                }
             }
             &--h2{
                 font-size: 1.2em;
@@ -26,11 +35,13 @@ $light-font: 500;
                 
             }
             &--buttons{
+                flex-wrap: wrap;
                 & > button{
                     color: white;
                     background-color: $main-color;
                     border: none;
                     border-radius: 12px;
+                    margin-top: 5px;
                     padding: 5px 30px;
                     &:not(:last-child){
                         margin-right: 20px;
@@ -39,7 +50,14 @@ $light-font: 500;
             }
         }
         &__right{
-            
+            @media (max-width: 725px) {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                align-items: center;
+                height: 50px;
+                margin-top: 10px;
+            }
             &--host{
                 display: flex;
                 align-items: center;
@@ -53,14 +71,24 @@ $light-font: 500;
                     border-radius: 100%;
                     margin-left: 25px;
                 }
+                @media (max-width: 725px) {
+                    margin-bottom: 0;
+                }
             }
             &--ratings{
                 & > img{
                     margin-left: 10px;
+                    
+                    @media (max-width: 725px) {
+                        height : 18px
+                    }
                 }
             }
         }
-
+        
+        @media (max-width: 725px) {
+            flex-direction: column;
+        }
     }
     .collapse{
         display: flex;
@@ -68,6 +96,15 @@ $light-font: 500;
         &__menu{
             width: 45%;
 
+        }
+        
+        @media (max-width: 725px) {
+            flex-direction: column;
+            margin-bottom: 60px;
+            &__menu{
+                width: 100%;
+                
+            }
         }
     }
 }
