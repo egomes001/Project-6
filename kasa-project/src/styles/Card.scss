@@ -1,0 +1,28 @@
+$shadow: rgba(0, 0, 0, 0.24) 0px 4px 8px;
+$img-radius: 15px;
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    box-shadow: $shadow;
+    position: relative;
+    border-radius: $img-radius;
+    &__cover{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: $img-radius;
+    }
+    &__title{
+        font-size: 1.1em;
+        color: white;
+        font-weight: bold;
+        position: absolute;
+        text-shadow: $shadow, 0 0 2px black;
+        top: 80%;
+        left: 2%;
+    }
+}

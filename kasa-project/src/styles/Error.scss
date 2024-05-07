@@ -1,0 +1,25 @@
+.error{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    &__text{
+        font-size: 2.8em;
+        color: rgba(255, 96, 96, 1);
+        text-align: center;
+    }
+    &__link{
+        font-size: 1em;
+        color :black;
+        text-decoration: underline black;
+    }
+    
+    @media (max-width: 895px) {
+        & > img {
+            height: 100px;
+        }
+        &__text{
+            font-size: 1.3em;
+        }
+    }
+}
