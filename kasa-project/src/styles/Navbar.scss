@@ -1,3 +1,7 @@
+@mixin underline{
+    text-decoration: underline;
+}
+
 .navbar{
     justify-content: space-between;
     
@@ -10,8 +14,11 @@
             margin-left: 20px;
             font-size: 1.1em;
         }
+        &.active{
+            @include underline;
+        }
         &:hover{
-            text-decoration: underline;
+            @include underline;
         }
     } 
 }
